@@ -4,20 +4,69 @@
     <meta charset="utf-8">
     <script src="angular.js"></script>
     <script src="app.js"></script>
-    <style media="screen">
-      body{
-        font-size: 1.3em;
-      }
-    </style>
-    <title>Color App</title>
+    <style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 230px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+    <title>Quiz App</title>
   </head>
   </head>
   <body ng-controller="myController" style="background-color:{{name}};">
-    <h1>Color App</h1>
-    <h3>Type any color name in the box to see magic!!</h3>
-    <div>
-      Color name:<input type="text" ng-model="name" style="background-color:{{name}};">
-    </div>
-    <div style="background-color:{{name}};">You typed: {{name}}</div>
+    <div class="container">
+
+<header>
+   <h1>Question 1</h1>
+</header>
+
+<nav>
+  <img src="1475232291804.jpg" height="200px" width="200px" />
+</nav>
+
+<article>
+  <h1>How many images do you have in this picture?</h1>
+  <ul>
+    <li><a href="wrong.html"><button type="button">1</button></a></li>
+    <li><a href="wrong.html"><button type="button">4</button></a></li>
+    <li><a href="right.html"><button type="button">7</button></a></li>
+    <li><a href="wrong.html"><button type="button">9</button></a></li>
+  </ul>
+</article>
+
+<footer>Copyright © urooj_khan.com</footer>
+
+</div>
   </body>
 </html>
